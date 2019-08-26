@@ -1,4 +1,4 @@
-# JavaScriptLabs
+# JavaScriptLabs with NodeJS
 Java Script Laboratory with NodeJS
 
 1) Introduction
