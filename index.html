@@ -8,32 +8,21 @@
 
         <script>
                 // JavaScript
-                console.log('Mensage na console');
-                document.write('Mensagem no Documento');
+                var board = 
+[ ['R','N','B','Q','K','B','N','R'],
+  ['P','P','P','P','P','P','P','P'],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  ['p','p','p','p','p','p','p','p'],
+  ['r','n','b','q','k','b','n','r']];
+print(board.join('\n') + '\n\n');
 
-                var alunos = [];
-
-                var aluno = {
-                    nome: 'Andre',
-                    idade: 45,
-                    peso: 100,
-                    humano: true
-                 };
-
-                alunos.push(aluno);
-
-
-                var aluno = {
-                    nome: 'Dudu',
-                    idade: 3,
-                    peso: 10,
-                    humano: false
-                }
-
-                alunos.push(aluno);
-
-
-                console.log(alunos);
+// Fazendo o King's Pawn avançar 2
+board[4][4] = board[6][4];
+board[6][4] = ' ';
+print(board.join('\n'));
         </script>
     </body>
 </html>
