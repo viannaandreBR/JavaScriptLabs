@@ -5,14 +5,10 @@
     <body>
         <div   id="app">
 
-            <button onclick="mostraAlerta1()">Submit Campaing</button>
-            
-            <button onmouseover="mostraAlerta11()">About Campaing</button>
-          
-            <button onclick="mostraAlerta2()">Submit Gamification</button>
+            <input      type="text"     name="nome"  id="nome"/>
+            <button     class="botao">Submit</button>
 
 
-            <button onclick="mostraAlerta3()">Submit Checkout</button>
 
         </div>
 
@@ -20,38 +16,29 @@
         
         <script>
 
-//On Click Functions
+            var btnElement = document.querySelector('button.botao');
 
-                function mostraAlerta1(){
-                    alert('Submit Campaing Button pressed');
-                };
+            btnElement.onclick = function () {
 
-                function mostraAlerta2(){
-                    alert('Submit Campaing Button pressed');
-                };
-
-                function mostraAlerta3(){
-                    alert('Submit Checkout Button pressed');
-                };
-
-// On Mouse Over
-
-                function mostraAlerta11(){
-                    document.write('<br><br> Our Campaings - Product 1, Product 2, Product 3');
-                };
-
-                function mostraAlerta21(){
-                    alert('Submit Campaing Button pressed');
-                };
-
-                function mostraAlerta31(){
-                    alert('Submit Checkout Button pressed');
-                };
+                alert('Botão Clicado');
 
 
+            }
 
 
+//            var inputElement = document.getElementById('nome');
+            
+//            var inputElement = document.getElementsByTagName('input');
 
+//              var inputElement = document.querySelector("div#app input");
+
+//            var inputElement = document.querySelector('input[name=nome]');
+
+ //           document.write('<br><br><br>');
+
+//         document.write('O Nome digitado é ', inputElement);
+
+//            console.log(inputElement);
 
         </script>
     </body>
