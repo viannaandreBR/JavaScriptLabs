@@ -1,34 +1,56 @@
 <html>
     <head>
-        <Title>Primeiro Commit</Title>
+        <Title>  DOM Manipulation</Title>
     </head>
     <body>
+        <div   id="app">
 
+            <button onclick="mostraAlerta1()">Submit Campaing</button>
+            
+            <button onmouseover="mostraAlerta11()">About Campaing</button>
+          
+            <button onclick="mostraAlerta2()">Submit Gamification</button>
+
+
+            <button onclick="mostraAlerta3()">Submit Checkout</button>
+
+        </div>
+
+    
         
         <script>
 
-//var texto = `O usuário mora em ${Endereco:cidade} / ${uf}, no bairro ${bairro}, na rua ${rua} com número ${numero}`
+//On Click Functions
 
-
-            function exibeEndereco(Endereco){
-                var texto = `O usuário mora em ${Endereco.cidade}`
-                var texto = `O usuário mora em ${Endereco.cidade} / ${Endereco.uf}, no bairro ${Endereco.bairro}, na rua ${Endereco.rua} com número ${Endereco.numero}`
-
-                    return texto;
-            };
-
-                var endereco = {
-                    rua: "Rua dos Pinheiros",
-                    numero: 1293,
-                    bairro: 'Centro',
-                    cidade: 'São Paulo',
-                    uf: 'SP'
+                function mostraAlerta1(){
+                    alert('Submit Campaing Button pressed');
                 };
 
-            
-           document.write(exibeEndereco(endereco));
+                function mostraAlerta2(){
+                    alert('Submit Campaing Button pressed');
+                };
 
- //           console.log(endereco);
+                function mostraAlerta3(){
+                    alert('Submit Checkout Button pressed');
+                };
+
+// On Mouse Over
+
+                function mostraAlerta11(){
+                    document.write('<br><br> Our Campaings - Product 1, Product 2, Product 3');
+                };
+
+                function mostraAlerta21(){
+                    alert('Submit Campaing Button pressed');
+                };
+
+                function mostraAlerta31(){
+                    alert('Submit Checkout Button pressed');
+                };
+
+
+
+
 
 
         </script>
