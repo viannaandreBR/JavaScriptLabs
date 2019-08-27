@@ -6,22 +6,28 @@
 
         
         <script>
-                // JavaScript
-                var board = 
-[ ['R','N','B','Q','K','B','N','R'],
-  ['P','P','P','P','P','P','P','P'],
-  [' ',' ',' ',' ',' ',' ',' ',' '],
-  [' ',' ',' ',' ',' ',' ',' ',' '],
-  [' ',' ',' ',' ',' ',' ',' ',' '],
-  [' ',' ',' ',' ',' ',' ',' ',' '],
-  ['p','p','p','p','p','p','p','p'],
-  ['r','n','b','q','k','b','n','r']];
-print(board.join('\n') + '\n\n');
+                function retornasexo(sexo){
+                // Retorna Sexo
+                // M, F
+                // Masculino, Feminino
 
-// Fazendo o King's Pawn avançar 2
-board[4][4] = board[6][4];
-board[6][4] = ' ';
-print(board.join('\n'));
+                    if (sexo === 'M') {
+                            return 'Masculino';
+                    } else {
+                        if (sexo === 'F') {   
+                            return 'Feminino';
+                    }}
+                }
+            
+            var resultado1 = retornasexo('M');
+
+            console.log(resultado1);
+            
+
+            var resultado2 = retornasexo('F');
+
+            console.log(resultado2);
+
         </script>
     </body>
 </html>
