@@ -4,36 +4,41 @@
     </head>
     <body>
 
-
-
+        
         <script>
-                // JavaScript
-                console.log('Mensage na console');
-                document.write('Mensagem no Documento');
+                function retornasexo(sexo){
+                // Retorna Sexo
+                // M, F
+                // Masculino, Feminino
+ 
+                 switch (sexo){
 
-                var alunos = [];
-
-                var aluno = {
-                    nome: 'Andre',
-                    idade: 45,
-                    peso: 100,
-                    humano: true
-                 };
-
-                alunos.push(aluno);
-
-
-                var aluno = {
-                    nome: 'Dudu',
-                    idade: 3,
-                    peso: 10,
-                    humano: false
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                 }
+                 
+                 
                 }
+            
+            var resultado1 = retornasexo('M');
 
-                alunos.push(aluno);
+            console.log(resultado1);
+            
+
+            var resultado2 = retornasexo('F');
+
+            console.log(resultado2);
 
 
-                console.log(alunos);
+            var resultado3 = retornasexo('XYA');
+
+            console.log(resultado3);
+
+
         </script>
     </body>
 </html>
