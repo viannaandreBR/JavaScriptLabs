@@ -6,16 +6,29 @@
 
         
         <script>
-                
-                function exibeAlgo() {
-                    console.log('Hello Wold na Console');
 
-                    document.write('Hello World no Doccument');
-                }
+//var texto = `O usuário mora em ${Endereco:cidade} / ${uf}, no bairro ${bairro}, na rua ${rua} com número ${numero}`
 
-                //setInterval(exibeAlgo,1000);
 
-                setTimeout(exibeAlgo,5000);
+            function exibeEndereco(Endereco){
+                var texto = `O usuário mora em ${Endereco.cidade}`
+                var texto = `O usuário mora em ${Endereco.cidade} / ${Endereco.uf}, no bairro ${Endereco.bairro}, na rua ${Endereco.rua} com número ${Endereco.numero}`
+
+                    return texto;
+            };
+
+                var endereco = {
+                    rua: "Rua dos Pinheiros",
+                    numero: 1293,
+                    bairro: 'Centro',
+                    cidade: 'São Paulo',
+                    uf: 'SP'
+                };
+
+            
+           document.write(exibeEndereco(endereco));
+
+ //           console.log(endereco);
 
 
         </script>
