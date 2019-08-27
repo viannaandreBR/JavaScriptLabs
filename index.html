@@ -16,7 +16,10 @@
                     } else {
                         if (sexo === 'F') {   
                             return 'Feminino';
-                    }}
+                        }else{
+                            return 'Outro';
+                        }
+                        }
                 }
             
             var resultado1 = retornasexo('M');
@@ -27,6 +30,12 @@
             var resultado2 = retornasexo('F');
 
             console.log(resultado2);
+
+
+            var resultado3 = retornasexo('XYA');
+
+            console.log(resultado3);
+
 
         </script>
     </body>
