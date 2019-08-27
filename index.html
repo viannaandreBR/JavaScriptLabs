@@ -10,16 +10,18 @@
                 // Retorna Sexo
                 // M, F
                 // Masculino, Feminino
+ 
+                 switch (sexo){
 
-                    if (sexo === 'M') {
-                            return 'Masculino';
-                    } else {
-                        if (sexo === 'F') {   
-                            return 'Feminino';
-                        }else{
-                            return 'Outro';
-                        }
-                        }
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                 }
+                 
+                 
                 }
             
             var resultado1 = retornasexo('M');
