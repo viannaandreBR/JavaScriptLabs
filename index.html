@@ -16,12 +16,20 @@
         
         <script>
 
+            var inputElement = document.querySelector('input[name=nome]');
             var btnElement = document.querySelector('button.botao');
 
+
+            console.log(inputElement);
+
+          
             btnElement.onclick = function () {
 
+                var text = inputElement.value;
+    
                 alert('Botão Clicado');
 
+                document.write('<br><br><br> Nome digitado ---->',text);
 
             }
 
