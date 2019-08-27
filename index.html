@@ -1,43 +1,53 @@
 <html>
     <head>
-        <Title>Primeiro Commit</Title>
+        <Title>  DOM Manipulation</Title>
     </head>
     <body>
+        <div   id="app">
 
+            <input      type="text"     name="nome"  id="nome"/>
+            <button     class="botao">Submit</button>
+
+
+
+        </div>
+
+    
         
         <script>
-                function retornasexo(sexo){
-                // Retorna Sexo
-                // M, F
-                // Masculino, Feminino
- 
-                 switch (sexo){
 
-                    case 'M':
-                        return 'Masculino';
-                    case 'F':
-                        return 'Feminino';
-                    default:
-                        return 'Outro';
-                 }
-                 
-                
-                }
+
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+
+            console.log(inputElement);
+
+          
+            btnElement.onclick = function () {
+
+                var text = inputElement.value;
+    
+                alert('Botão Clicado');
+
+                document.write('<br><br><br> Nome digitado ---->',text);
+
+            }
+
+
+//            var inputElement = document.getElementById('nome');
             
-            var resultado1 = retornasexo('M');
+//            var inputElement = document.getElementsByTagName('input');
 
-            console.log(resultado1);
-            
+//              var inputElement = document.querySelector("div#app input");
 
-            var resultado2 = retornasexo('F');
+//            var inputElement = document.querySelector('input[name=nome]');
 
-            console.log(resultado2);
+ //           document.write('<br><br><br>');
 
+//         document.write('O Nome digitado é ', inputElement);
 
-            var resultado3 = retornasexo('XYA');
-
-            console.log(resultado3);
-
+//            console.log(inputElement);
 
         </script>
     </body>
