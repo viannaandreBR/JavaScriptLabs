@@ -10,7 +10,8 @@ var todos = [
 ];
   
 function renderTodos(){
-  listElement.innerHTML='';
+  listElement.innerHTML = '';
+
   for (todo of todos) {
 
     var todoElement = document.createElement('li');
@@ -19,6 +20,10 @@ function renderTodos(){
     var linkElement = document.createElement('a');
 
     linkElement.setAttribute('href', '#');
+
+    var pos = todos.indexOf(todo);
+
+    linkElement .setAttribute ('onClick', 'deleteTodo(' + pos + ')');
 
     var linkText = document.createTextNode('Excluir');
 
@@ -44,5 +49,11 @@ function renderTodos(){
 
 buttonElement.onclick = addTodo;
 
-renderTodos();
 
+function deleteTodo(pos){
+  todos.splice(pos,1);
+  renderTodos();
+}
+
+
+renderTodos();
