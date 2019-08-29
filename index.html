@@ -1,55 +1,32 @@
 <html>
-    <head>
-        <Title>  DOM Manipulation</Title>
+    <head> 
+        <meta charset="UTF-8">
+        <title>  Java ScriptLabs</title>
     </head>
     <body>
-        <div   id="app">
+        <div   id="app"> <input  id="nome" />
 
-            <input      type="text"     name="nome"  id="nome"/>
-            <button     class="botao">Submit</button>
+        </div> 
 
-
-
-        </div>
-
-    
-        
-        
         <script>
+            var linkElement = document.createElement('a');
+
+            linkElement.setAttribute('href', 'http://www.t4y.co');
+            linkElement.setAttribute('title', 'Site Token For You');
 
 
-            var inputElement = document.querySelector('input[name=nome]');
-            var btnElement = document.querySelector('button.botao');
 
+            var textElement = document.createTextNode('Acessar Site Token For You');
 
-            console.log(inputElement);
+            linkElement.appendChild(textElement);
 
-          
-            btnElement.onclick = function () {
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
 
-                var text = inputElement.value;
-    
-                alert('Botão Clicado');
+            var inputElement = document.querySelector('nome');
+            containerElement.removeChild(inputElement); 
 
-                document.write('<br><br><br> Nome digitado ---->',text);
-
-            }
-
-
-//            var inputElement = document.getElementById('nome');
-            
-//            var inputElement = document.getElementsByTagName('input');
-
-//              var inputElement = document.querySelector("div#app input");
-
-//            var inputElement = document.querySelector('input[name=nome]');
-
- //           document.write('<br><br><br>');
-
-//         document.write('O Nome digitado é ', inputElement);
-
-//            console.log(inputElement);
 
         </script>
-    </body>
+    </body> 
 </html>
