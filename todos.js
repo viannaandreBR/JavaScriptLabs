@@ -2,7 +2,7 @@ var listElement = document.querySelector('#app  ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
-var todos = [
+var todos =  [
         'Fazer Cafe',
         'Estudar Java Script',
         'Comitar no Git Hub',
@@ -35,8 +35,11 @@ function renderTodos(){
     
     listElement.appendChild(todoElement);
     console.log(todo);
+
   }
   }
+
+renderTodos();
 
   function addTodo(){
     var todoText = inputElement.value;
@@ -44,6 +47,7 @@ function renderTodos(){
     todos.push(todoText);
     inputElement.value = '';
     renderTodos();
+    saveToStorage();
   }
 
 
@@ -53,7 +57,11 @@ buttonElement.onclick = addTodo;
 function deleteTodo(pos){
   todos.splice(pos,1);
   renderTodos();
+  saveToStorage();
 }
 
+function saveToStorage(){
+  localStorage.setItem('list_todos',  JSON.stringify(todos));
+  //sessionStorage.setItem('list_todos',  JSON.stringify(todos));
+}
 
-renderTodos();
