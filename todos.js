@@ -9,7 +9,14 @@ var todos = [
         'Aprender Docker'
 ];
   
+function renderTodos(){
+  for (todo of todos) {
+      console.log(todo);
+  }
 
 
+}
 
-]
+renderTodos();
+
+
