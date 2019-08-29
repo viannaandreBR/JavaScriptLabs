@@ -1,55 +1,24 @@
 <html>
-    <head>
-        <Title>  DOM Manipulation</Title>
-    </head>
-    <body>
-        <div   id="app">
+<head>
+    <meta charset="UTF=8">
+    <title> JavaScript Labs</title>
+</head>
+<body>
+            <div   id="app">
+                <ul>
 
-            <input      type="text"     name="nome"  id="nome"/>
-            <button     class="botao">Submit</button>
+                </ul>
+                <input  type="text" placeholder="Digite um Todo">
 
+                <button> Adicionar</button>
 
+            </div>
 
-        </div>
+            <script src='todos.js'></script>
 
-    
-        
-        
-        <script>
-
-
-            var inputElement = document.querySelector('input[name=nome]');
-            var btnElement = document.querySelector('button.botao');
+</body>
 
 
-            console.log(inputElement);
-
-          
-            btnElement.onclick = function () {
-
-                var text = inputElement.value;
-    
-                alert('Botão Clicado');
-
-                document.write('<br><br><br> Nome digitado ---->',text);
-
-            }
 
 
-//            var inputElement = document.getElementById('nome');
-            
-//            var inputElement = document.getElementsByTagName('input');
-
-//              var inputElement = document.querySelector("div#app input");
-
-//            var inputElement = document.querySelector('input[name=nome]');
-
- //           document.write('<br><br><br>');
-
-//         document.write('O Nome digitado é ', inputElement);
-
-//            console.log(inputElement);
-
-        </script>
-    </body>
 </html>
