@@ -4,29 +4,17 @@
         <title>  Java ScriptLabs</title>
     </head>
     <body>
-        <div   id="app"> <input  id="nome" />
+        <div   id="app"> 
+                <div class="box"></div>
 
         </div> 
 
         <script>
-            var linkElement = document.createElement('a');
+                var boxElement = document.querySelector(".box");
 
-            linkElement.setAttribute('href', 'http://www.t4y.co');
-            linkElement.setAttribute('title', 'Site Token For You');
-
-
-
-            var textElement = document.createTextNode('Acessar Site Token For You');
-
-            linkElement.appendChild(textElement);
-
-            var containerElement = document.querySelector('#app');
-            containerElement.appendChild(linkElement);
-
-            var inputElement = document.querySelector('nome');
-            containerElement.removeChild(inputElement); 
-
-
+                boxElement.style.width   = 100;
+                boxElement.style.height  = 100;
+                boxElement.style.backgroundColor = '#f00'; 
         </script>
     </body> 
 </html>
